@@ -11,7 +11,7 @@ pipeline {
         stage('Download Artifact from CI') {
             steps {
                 copyArtifacts(
-                    projectName: 'CIPipeline',   // name of your CI job
+                    projectName: 'ci_pipeline',   // name of your CI job
                     selector: lastSuccessful()
                 )
             }
